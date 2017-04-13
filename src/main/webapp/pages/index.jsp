@@ -13,8 +13,10 @@
     <f:view>
         <h:form >
             <h3>請輸入您的名稱</h3>
+            <h:outputText value="#{user.errMessage}"/><p>
             名稱: <h:inputText value="#{user.name}"/><p>
-            <h:commandButton value="送出" action="welcome"/>
+            密碼: <h:inputSecret value="#{user.password}"/><p>
+            <h:commandButton value="送出" action="success"/>
         </h:form>
     </f:view>
     </body>

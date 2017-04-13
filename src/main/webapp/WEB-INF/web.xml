@@ -5,7 +5,7 @@
 	version="3.0">
 	
    <welcome-file-list>
-      <welcome-file>faces/index.jsp</welcome-file>
+      <welcome-file>/pages/index.jsp</welcome-file>
    </welcome-file-list>
 	
    <servlet>
@@ -13,11 +13,14 @@
       <servlet-class>javax.faces.webapp.FacesServlet</servlet-class>
       <load-on-startup>1</load-on-startup>
    </servlet>
-	
+	<!-- 
    <servlet-mapping>
       <servlet-name>Faces Servlet</servlet-name>
       <url-pattern>/faces/*</url-pattern>
-   </servlet-mapping>
-	
-	
+   </servlet-mapping> 
+-->
+	<servlet-mapping>
+      <servlet-name>Faces Servlet</servlet-name>
+      <url-pattern>*.faces</url-pattern>
+   </servlet-mapping> 
 </web-app>

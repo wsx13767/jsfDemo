@@ -5,11 +5,15 @@
 
 <faces-config>
     <navigation-rule>
-        <from-view-id>/faces/index.jsp</from-view-id>
+        <from-view-id>/pages/index.jsp</from-view-id>
 		<navigation-case>
-			<from-action>login</from-action>
-			<to-view-id>/faces/welcome.jsp</to-view-id>
+			<from-action>success</from-action>
+			<to-view-id>/pages/welcome.jsp</to-view-id>
 		</navigation-case>
+		<navigation-case>
+            <from-outcome>failure</from-outcome>
+            <to-view-id>/pages/index.jsp</to-view-id>
+        </navigation-case>
     </navigation-rule>
        
     <managed-bean>
